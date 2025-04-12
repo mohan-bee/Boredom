@@ -16,7 +16,7 @@ function App() {
   // Function to fetch a random "thing" from the backend
   const fetchThing = async () => {
     try {
-      const response = await fetch('http://localhost:3000/thing');
+      const response = await fetch('https://boredom-p7so.onrender.com/thing');
       const data = await response.json();
       setThing(data);
       setLoading(false); // Set loading to false after fetching
